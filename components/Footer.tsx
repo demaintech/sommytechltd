@@ -120,7 +120,7 @@ const Footer = () => {
           <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
             {/* Brand */}
             <div>
-              <Link href="/" className="inline-flex items-center">
+              {/* <Link href="/" className="inline-flex items-center">
                 <Image
                   src="/assets/logo.jpg"
                   width={150}
@@ -128,7 +128,7 @@ const Footer = () => {
                   alt="SommyTech Global Solutions LTD"
                   className="h-14 w-14 rounded-xl object-cover ring-1 ring-white/10"
                 />
-              </Link>
+              </Link> */}
 
               <h3 className="mt-6 text-xl font-bold text-white">
                 SommyTech

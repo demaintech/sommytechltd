@@ -32,6 +32,10 @@ const navigation = [
     href: "/portfolio",
   },
   {
+    name: "Teams",
+    href: "/teams",
+  },
+  {
     name: "Blog",
     href: "/blog",
   },
@@ -102,10 +106,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 transition-all bg-white py-5 duration-500 ${
           isScrolled
-            ? "border-b border-white/10 bg-zinc-950/85 shadow-2xl shadow-black/20 backdrop-blur-2xl"
-            : "bg-zinc-950/60 backdrop-blur-xl"
+            ? "border-b border-white/10  shadow-2xl shadow-black/20 backdrop-blur-2xl"
+            : " backdrop-blur-xl"
         }`}
       >
         {/* Ambient header glow */}
@@ -129,10 +133,10 @@ const Header = () => {
             aria-label="SommyTech Global Solutions home"
           >
             <div className="relative">
-              <div className="absolute -inset-2 rounded-2xl bg-green-400/10 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="absolute -inset-2 rounded-2xl  " />
 
               <Image
-                src="/assets/logo.jpg"
+                src="/assets/images/logo.jpg"
                 width={150}
                 height={50}
                 alt="SommyTech Global Solutions LTD"
@@ -159,8 +163,8 @@ const Header = () => {
                   <span
                     className={`relative z-10 text-sm font-medium transition-colors duration-300 ${
                       active
-                        ? "text-white"
-                        : "text-zinc-400 group-hover:text-white"
+                        ? "text-zinc-900"
+                        : "text-zinc-900 group-hover:text-green-500"
                     }`}
                   >
                     {item.name}
@@ -171,7 +175,7 @@ const Header = () => {
                       className={`relative z-10 h-3.5 w-3.5 transition-all duration-300 ${
                         active
                           ? "text-green-400"
-                          : "text-zinc-500 group-hover:text-green-400"
+                          : "text-zinc-900 group-hover:text-green-400"
                       } group-hover:rotate-180`}
                     />
                   )}
