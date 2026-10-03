@@ -97,10 +97,10 @@ const fadeUp = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   },
-};
+} as const;
 
 const stagger = {
   hidden: {},
@@ -735,7 +735,7 @@ const AboutPage = () => {
                 href="/contact"
                 className="group inline-flex items-center gap-2 rounded-xl bg-green-400 px-7 py-4 text-sm font-bold text-zinc-950 transition-all duration-300 hover:-translate-y-1 hover:bg-green-300 hover:shadow-xl hover:shadow-green-500/20"
               >
-                Let's build the future
+                Let’s build the future
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
@@ -765,7 +765,7 @@ const AboutPage = () => {
                 </span>
 
                 <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Let's turn it into something remarkable.
+                  Let’s turn it into something remarkable.
                 </h2>
 
                 <p className="mt-3 max-w-xl text-sm leading-7 text-zinc-500">

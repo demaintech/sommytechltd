@@ -13,7 +13,6 @@ import {
   Clock3,
   Mail,
   Search,
-  Sparkles,
   TrendingUp,
 } from "lucide-react";
 
@@ -270,7 +269,7 @@ export default function BlogPage() {
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold">
-                  Editor's pick
+                  Editor’s pick
                 </h2>
               </div>
 
@@ -600,7 +599,7 @@ export default function BlogPage() {
               </p>
 
               <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Let's build something meaningful.
+                Let’s build something meaningful.
               </h2>
 
               <p className="mt-3 max-w-xl text-sm leading-6 text-zinc-500">

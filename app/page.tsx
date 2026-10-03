@@ -2,8 +2,6 @@ import About from "@/components/About";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
-import MiniStart from "@/components/MiniStart";
-import MinorContact from "@/components/MinorContact";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";

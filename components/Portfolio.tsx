@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -216,7 +217,7 @@ const Portfolio = () => {
                 transition={{
                   duration: 0.45,
                   delay: index * 0.04,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] ${
                   project.featured ? "md:col-span-2" : ""
@@ -230,11 +231,17 @@ const Portfolio = () => {
                       : "aspect-[4/3]"
                   }`}
                 >
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    fill
+                    sizes={
+                      project.featured
+                        ? "(max-width: 768px) 100vw, (max-width: 1280px) 66vw, 50vw"
+                        : "(max-width: 768px) 100vw, 33vw"
+                    }
                     loading={index < 3 ? "eager" : "lazy"}
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
 
                   {/* Image overlays */}

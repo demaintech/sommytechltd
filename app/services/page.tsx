@@ -15,7 +15,6 @@ import {
   LockKeyhole,
   Palette,
   Rocket,
-  Server,
   ShieldCheck,
   Smartphone,
   Sparkles,
@@ -713,7 +712,7 @@ export default function ServicesPage() {
             <div className="max-w-3xl">
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1.5 text-xs font-medium text-emerald-300">
                 <Sparkles size={13} />
-                Let's build something meaningful
+                Let’s build something meaningful
               </div>
 
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
@@ -722,7 +721,7 @@ export default function ServicesPage() {
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-400">
                 Tell us what you are building, what you want to improve, or
-                where technology is getting in the way. Let's explore what is
+                where technology is getting in the way. Let’s explore what is
                 possible.
               </p>
             </div>

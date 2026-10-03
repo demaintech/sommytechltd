@@ -80,10 +80,6 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -158,6 +154,7 @@ const Header = () => {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
                   className="group relative flex items-center gap-1 px-4 py-2.5"
                 >
                   <span
@@ -282,7 +279,7 @@ const Header = () => {
                 exit={{ opacity: 0, y: -15 }}
                 transition={{
                   duration: 0.25,
-                  ease: [0.16, 1, 0.3, 1],
+                  ease: [0.16, 1, 0.3, 1] as const,
                 }}
                 className="absolute left-0 right-0 top-full border-t border-white/10 bg-zinc-950/98 shadow-2xl shadow-black/40 backdrop-blur-2xl lg:hidden"
               >

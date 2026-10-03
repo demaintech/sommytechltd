@@ -11,7 +11,6 @@ import {
   ChevronRight,
   Cloud,
   Code2,
-  ExternalLink,
   Layers3,
   LayoutDashboard,
   Smartphone,
@@ -598,7 +597,7 @@ export default function PortfolioPage() {
                 <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-400">
                   Whether you are starting something new, modernizing an
                   existing platform, or exploring what technology can do for
-                  your organization, let's build the next chapter together.
+                  your organization, let’s build the next chapter together.
                 </p>
               </div>
 

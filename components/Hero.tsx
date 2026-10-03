@@ -11,13 +11,9 @@ import {
   Cloud,
   Code2,
   Cpu,
-  Globe2,
   Layers3,
-  MousePointer2,
-  Server,
   Shield,
   Sparkles,
-  Zap,
 } from "lucide-react";
 
 const slides = [
@@ -290,11 +286,11 @@ const Hero = () => {
                     y: 0,
                     transition: {
                       duration: 0.8,
-                      ease: [0.16, 1, 0.3, 1],
+                      ease: [0.16, 1, 0.3, 1] as const,
                     },
                   },
                 }}
-                className="max-w-5xl text-5xl font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-6xl md:text-7xl lg:text-[5.8rem]"
+                className="max-w-5xl text-4xl font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-6xl md:text-7xl lg:text-[4.8rem]"
               >
                 {slide.title}
                 <span className="mt-2 block bg-gradient-to-r from-green-300 via-emerald-400 to-teal-400 bg-clip-text text-transparent">

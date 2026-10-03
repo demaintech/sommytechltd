@@ -13,7 +13,7 @@ const MiniStart = () => {
           Have a project in mind?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600">
-          Let's create something brilliant together. We are excited to help you achieve your business goals.
+          Let’s create something brilliant together. We are excited to help you achieve your business goals.
         </p>
         <div className="mt-8 flex items-center justify-center gap-x-6">
           <Link
